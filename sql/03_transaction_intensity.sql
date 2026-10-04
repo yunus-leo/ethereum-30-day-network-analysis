@@ -1,0 +1,21 @@
+-- Ethereum 30-Day Network Activity Analysis
+-- Task 3: Transaction Intensity
+--
+-- Analytical question:
+-- How many transactions were generated per active address?
+--
+-- Transaction intensity:
+-- Daily transactions / Daily active addresses
+--
+-- This metric measures the average number of transactions associated
+-- with each active address per day.
+--
+-- The metric does not mean that every address actually made that
+-- exact number of transactions.
+--
+-- The daily transaction count and daily active-address datasets are
+-- combined in Python for the analytical calculation.
+
+-- ** Important **
+-- Because Task 3 combines the outputs of Tasks 1 and 2, there is no 
+-- need to run another expensive BigQuery transaction-table query for this metric.
