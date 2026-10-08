@@ -1,0 +1,25 @@
+-- Task 9 — Relationships Between Metrics
+--
+-- Question:
+-- What relationships were observed between Ethereum network activity metrics during the analysis period?
+--
+-- No new raw blockchain extraction is required for Task 9.
+-- The analysis uses the daily analytical datasets already produced by Tasks 1–5:
+--
+--   data/processed/daily_transactions.csv
+--   data/processed/daily_active_addresses.csv
+--   data/processed/daily_transaction_intensity.csv
+--   data/processed/daily_network_utilization.csv
+--   data/processed/daily_gas_activity.csv
+--
+-- These datasets were produced from BigQuery using the SQL files for Tasks 1–5.
+-- Task 9 performs correlation analysis, statistical summaries, and visualization
+-- in Python/Pandas, consistent with the project's SQL → Python separation.
+--
+-- Analysis window:
+--   Start: 2026-08-24 10:01:35 UTC
+--   End:   2026-09-23 10:01:35 UTC
+--
+-- For comparable daily relationships, Task 9 excludes the two partial boundary
+-- days (2026-08-24 and 2026-09-23) and analyzes the 29 complete days:
+-- 2026-08-25 through 2026-09-22.
