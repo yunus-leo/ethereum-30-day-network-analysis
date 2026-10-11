@@ -7,7 +7,8 @@ A blockchain data analytics project examining **Ethereum Mainnet transaction act
 
 **Stack:** Google BigQuery · GoogleSQL · Python · Pandas · Matplotlib · Plotly · Jupyter
 
-> \*\*Research question:\*\* What happened on Ethereum during the observation window, and what can network-level data tell us about activity?
+## Research question:
+What happened on Ethereum during the observation window, and what can network-level data tell us about activity?
 
 The analysis uses **Google BigQuery and GoogleSQL** for blockchain data extraction and aggregation, followed by **Python and Pandas** for data processing, exploratory data analysis, statistical evaluation, and visualization.
 
