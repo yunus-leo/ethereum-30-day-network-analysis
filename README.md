@@ -7,7 +7,8 @@ A blockchain data analytics project examining **Ethereum Mainnet transaction act
 
 **Stack:** Google BigQuery · GoogleSQL · Python · Pandas · Matplotlib · Plotly · Jupyter
 
-> \*\*Research question:\*\* What happened on Ethereum during the observation window, and what can network-level data tell us about activity?
+## Research question:
+What happened on Ethereum during the observation window, and what can network-level data tell us about activity?
 
 The analysis uses **Google BigQuery and GoogleSQL** for blockchain data extraction and aggregation, followed by **Python and Pandas** for data processing, exploratory data analysis, statistical evaluation, and visualization.
 
@@ -41,7 +42,7 @@ The analysis uses **Google BigQuery and GoogleSQL** for blockchain data extracti
 
 **Answer:** Ethereum processed **55.15 million transactions** during the 29 complete days, averaging **1.90 million/day**. The busiest day was **September 11** (**2,097,342**); the quietest was **September 13** (**1,476,230**). Counts finished **4.98%** above the first complete day, but varied enough that this endpoint change should not be interpreted as a sustained upward trend.
 
-[Ethereum daily transaction activity](visualizations/png/01\_transaction\_activity\_chart\_01.png)
+![Ethereum daily transaction activity](visualizations/png/01\_transaction\_activity\_chart\_01.png)
 
 [Notebook](notebooks/01_transaction_activity.ipynb) · [Interactive HTML file](visualizations/html/01_transaction_activity_chart_01.html)
 
@@ -51,7 +52,7 @@ The analysis uses **Google BigQuery and GoogleSQL** for blockchain data extracti
 
 An *active address* here is a distinct non-null sender or recipient on a given day—not necessarily an individual person.
 
-[Ethereum daily active addresses](visualizations/png/02\_active\_addresses\_chart\_01.png)
+![Ethereum daily active addresses](visualizations/png/02\_active\_addresses\_chart\_01.png)
 
 [Notebook](notebooks/02_active_addresses.ipynb) · [Interactive HTML file](visualizations/html/02_active_addresses_chart_01.html)
 
@@ -61,7 +62,7 @@ An *active address* here is a distinct non-null sender or recipient on a given d
 
 This is a *network-level ratio*, not the average number of transactions sent by each address: recipients and contracts are included in the denominator.
 
-[Notebook](notebooks/03_transaction_intensity.ipynb) · [Chart PNG](visualizations/png/03_transaction_intensity_chart_01.png)
+[Notebook](notebooks/03_transaction_intensity.ipynb) · ![Chart PNG](visualizations/png/03_transaction_intensity_chart_01.png)
 
 ### 4\. How heavily was Ethereum blockspace utilized?
 
@@ -69,7 +70,7 @@ This is a *network-level ratio*, not the average number of transactions sent by 
 
 Utilization is the **daily mean of block-level gas-used / gas-limit percentages**; it does not directly measure congestion or waiting times.
 
-[Notebook](notebooks/04_network_utilization.ipynb) · [Chart PNG](visualizations/png/04_network_utilization_chart_01.png)
+[Notebook](notebooks/04_network_utilization.ipynb) · ![Chart PNG](visualizations/png/04_network_utilization_chart_01.png)
 
 ### 5\. How did gas market activity change?
 
@@ -87,7 +88,7 @@ Gas price is distinct from gas consumed; these field-based gas-price summaries d
 
 Receipt failures describe execution outcomes of included transactions—not network downtime or transactions that never reached a block.
 
-[Notebook](notebooks/06_transaction_success.ipynb) · [Chart PNG](visualizations/png/06_transaction_success_chart_01.png)
+[Notebook](notebooks/06_transaction_success.ipynb) · ![Chart PNG](visualizations/png/06_transaction_success_chart_01.png)
 
 ### 7\. What contract-related activity was observable?
 
@@ -95,7 +96,7 @@ Receipt failures describe execution outcomes of included transactions—not netw
 
 The available evidence supports substantial observable contract-event activity, **not a complete contract-versus-EOA breakdown**.
 
-[Notebook](notebooks/07_contract_vs_eoa.ipynb) · [Chart PNG](visualizations/png/07_contract_vs_eoa_chart_01.png)
+[Notebook](notebooks/07_contract_vs_eoa.ipynb) · ![Chart PNG](visualizations/png/07_contract_vs_eoa_chart_01.png)
 
 ### 8\. Which days showed unusual network activity?
 
@@ -103,7 +104,7 @@ The available evidence supports substantial observable contract-event activity, 
 
 Flags are **descriptive signals for further investigation**. Several metrics share underlying data, so multiple flags are not independent proof of a single event.
 
-[Ethereum network activity anomaly screen](visualizations/png/08\_network\_activity\_anomalies\_chart\_01.png)
+![Ethereum network activity anomaly screen](visualizations/png/08\_network\_activity\_anomalies\_chart\_01.png)
 
 [Notebook](notebooks/08_network_activity_anomalies.ipynb) · [Interactive HTML file](visualizations/html/08_network_activity_anomalies_chart_01.html)
 
@@ -113,7 +114,7 @@ Flags are **descriptive signals for further investigation**. Several metrics sha
 
 These are correlations across **29 daily observations**, not evidence of causation or of the same relationships at hourly granularity.
 
-[Ethereum metric relationships](visualizations/png/09\_metric\_relationships\_chart\_01.png)
+![Ethereum metric relationships](visualizations/png/09\_metric\_relationships\_chart\_01.png)
 
 [Notebook](notebooks/09_metric_relationships.ipynb) · [Interactive HTML file](visualizations/html/09_metric_relationships_chart_01.html)
 
