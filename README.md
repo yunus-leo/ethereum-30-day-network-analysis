@@ -51,7 +51,7 @@ The analysis uses **Google BigQuery and GoogleSQL** for blockchain data extracti
 
 An *active address* here is a distinct non-null sender or recipient on a given day—not necessarily an individual person.
 
-[Ethereum daily active addresses](visualizations/png/02\_active\_addresses\_chart\_01.png)
+![Ethereum daily active addresses](visualizations/png/02\_active\_addresses\_chart\_01.png)
 
 [Notebook](notebooks/02_active_addresses.ipynb) · [Interactive HTML file](visualizations/html/02_active_addresses_chart_01.html)
 
